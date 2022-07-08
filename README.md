@@ -34,13 +34,23 @@ Please [cite us](http://www.compmolbiophysbc.org/publications) if you use this s
 Installation & Usage
 --------------------
 
-It is recommended that the installation is performed in a personal python environment (`conda`, `miniconda`, or similar). AToM requires the `configobj` and `numpy` python modules. 
+It is recommended that the installation is performed in a personal python environment (`conda`, `miniconda`, or similar). AToM requires the `configobj` and `numpy` python modules.
 
-```
-git clone https://github.com/Gallicchio-Lab/AToM-OpenMM.git
-cd AToM-OpenMM
-python setup.py install
-```
+0. (if necessary) install conda
+1. `conda install -n ENVIRONMENT_NAME -c conda-forge python=3.7 cudatoolkit=10.2 openmm-atmmetaforce-plugin configobj r-base`
+1. install the `UWHAM` package from CRAN:
+    ```
+    $ R
+    ...
+    > install.package("UWHAM")
+    # follow the prompts
+    # ensure that it installed correctly
+    > library("UWHAM")
+    Loading required package: trust
+    ```
+1. `git clone https://github.com/Gallicchio-Lab/AToM-OpenMM.git`
+1. cd AToM-OpenMM
+1. `pip install .`
 
 See [examples](examples/) for examples and tutorials.
 

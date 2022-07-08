@@ -1,19 +1,13 @@
-from __future__ import print_function
 from __future__ import division
+
+from datetime import datetime
 import sys
 import time
-import math
-import random
-import logging
-import signal
-import shutil
 import random
 
-from simtk import openmm as mm
-from simtk.openmm.app import *
-from simtk.openmm import *
-from simtk.unit import *
-from datetime import datetime
+from openmm.app import *
+from openmm import *
+from openmm.unit import *
 
 from openmm_async_re import openmm_job_AmberABFE
 

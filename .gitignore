@@ -1,0 +1,16 @@
+PKG-INFO
+*.py[oc]
+
+*.txt
+*.out
+*.err
+*.dat
+*.dcd
+*.RData
+*.Rout
+*.pdb
+*.xml
+*.ckpt
+*.log
+*.batch
+*.pdf
